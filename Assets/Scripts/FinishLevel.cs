@@ -5,17 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class FinishLevel : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private Animator anime;
+
+    private bool levelCompleted = false;
+
     void Start()
     {
-        
+        anime = GetComponent<Animator>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
         if(collision.gameObject.name == "Player"){
-            CompleteLevel();
+            anime.SetTrigger("finish");
+            levelCompleted = true;
+            Invoke("CompleteLevel", 3f);
         }
     }
 
@@ -23,4 +28,5 @@ public class FinishLevel : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+    
 }
