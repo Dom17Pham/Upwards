@@ -15,9 +15,9 @@ public class WayPointFollower : MonoBehaviour
         {
             currentWaypointIndex++;
             // Code below is for the game object to return to the first waypoint
-            // if(currentWaypointIndex >= waypoints.Length){
-            //     currentWaypointIndex = 0;
-            // }
+            if(currentWaypointIndex >= waypoints.Length){
+                currentWaypointIndex = 0;
+            }
         }
         transform.position = Vector2.MoveTowards(transform.position, waypoints[currentWaypointIndex].transform.position, Time.deltaTime * speed);
     }
