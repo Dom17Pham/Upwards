@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RotateObject : MonoBehaviour
 {
-    [SerializeField] private float speed = 2f;
+    [SerializeField] private float speed = 1f;
     // Update is called once per frame
     private void Update()
     {
