@@ -46,6 +46,9 @@ TagManager:
   - name: Terrain
     uniqueID: 3684648231
     locked: 0
+  - name: Projectile
+    uniqueID: 3334661421
+    locked: 0
   - name: Susan
     uniqueID: 1181511621
     locked: 0
