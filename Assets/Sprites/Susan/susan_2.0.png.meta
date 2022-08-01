@@ -1,22 +1,19 @@
 fileFormatVersion: 2
-guid: b7b16f90a1d70624fab442ce072600c7
+guid: ad6a8ae306d65b749b56d39791a7b711
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1787447111962380707
-    second: susan_0
+      213: 8842641690240134297
+    second: susan_2.0_0
   - first:
-      213: -1196401756303473505
-    second: susan_1
+      213: -5065418669310441137
+    second: susan_2.0_1
   - first:
-      213: 1056168092246530899
-    second: susan_2
+      213: -6435639562130987973
+    second: susan_2.0_2
   - first:
-      213: -1364207055046429897
-    second: susan_3
-  - first:
-      213: 4900383034080164278
-    second: susan_4
+      213: 7590386419570306359
+    second: susan_2.0_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -106,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: susan_0
+      name: susan_2.0_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 160
-        height: 120
+        width: 192
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -120,20 +117,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a9c0539da94ec810800000000000000
-      internalID: 1787447111962380707
+      spriteID: 99ca2d654cf57ba70800000000000000
+      internalID: 8842641690240134297
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: susan_1
+      name: susan_2.0_1
       rect:
         serializedVersion: 2
-        x: 160
+        x: 192
         y: 0
-        width: 160
-        height: 120
+        width: 192
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,20 +138,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f94c0e201f6856fe0800000000000000
-      internalID: -1196401756303473505
+      spriteID: f498e19de8404b9b0800000000000000
+      internalID: -5065418669310441137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: susan_2
+      name: susan_2.0_2
       rect:
         serializedVersion: 2
-        x: 320
+        x: 384
         y: 0
-        width: 160
-        height: 120
+        width: 192
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35bd479b84348ae00800000000000000
-      internalID: 1056168092246530899
+      spriteID: b346bbc6ae300b6a0800000000000000
+      internalID: -6435639562130987973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: susan_3
+      name: susan_2.0_3
       rect:
         serializedVersion: 2
-        x: 480
+        x: 576
         y: 0
-        width: 160
-        height: 120
+        width: 192
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,29 +180,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73330eb49ec511de0800000000000000
-      internalID: -1364207055046429897
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: susan_4
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 160
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b9f2b9f768a10440800000000000000
-      internalID: 4900383034080164278
+      spriteID: 73def66ab38765960800000000000000
+      internalID: 7590386419570306359
       vertices: []
       indices: 
       edges: []
