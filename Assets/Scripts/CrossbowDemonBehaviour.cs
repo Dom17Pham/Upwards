@@ -16,6 +16,7 @@ public class CrossbowDemonBehaviour : MonoBehaviour
         Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
 
         arrow = GameObject.Find("Arrow_0");
+        arrow.transform.position = new Vector3(transform.position.x, transform.position.y, 0f);
         sprite = arrow.GetComponent<SpriteRenderer>();
         sprite.sortingLayerID = SortingLayer.NameToID("Projectile");
         }
