@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3489297313572949193}
   - component: {fileID: 265216753842626034}
   - component: {fileID: -8687391882165761765}
+  - component: {fileID: -1042646740934068851}
   m_Layer: 0
   m_Name: Arrow Projectile
   m_TagString: Enemy
@@ -28,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 262219383617701409}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.442, y: -7.57, z: -413.1612}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2835058539467081132}
@@ -136,6 +137,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!210 &-1042646740934068851
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262219383617701409}
+  m_Enabled: 1
+  m_SortingLayerID: -960305875
+  m_SortingLayer: 2
+  m_SortingOrder: 0
 --- !u!1 &5958556496524316363
 GameObject:
   m_ObjectHideFlags: 0
