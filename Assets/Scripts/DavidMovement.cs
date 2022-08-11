@@ -92,7 +92,7 @@ public class DavidMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Trap")
+        if(collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Trap" || collision.gameObject.tag == "ParentProjectile")
         {
             anime.SetTrigger("death");
             rb.bodyType = RigidbodyType2D.Static;
