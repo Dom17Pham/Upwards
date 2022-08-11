@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ArrowProjectile : MonoBehaviour
 {
-    public float speed = 2.0f;
+    public float speed = 5.0f;
     private GameObject Parent;
     private GameObject Child;
     private GameObject[] Parents;
