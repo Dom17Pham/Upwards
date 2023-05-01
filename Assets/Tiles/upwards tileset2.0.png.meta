@@ -180,6 +180,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -234,6 +235,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1349,6 +1362,59 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      upwards tileset2.0_0: -7398257317621989437
+      upwards tileset2.0_1: 5167063258811696227
+      upwards tileset2.0_10: 1034184559527510122
+      upwards tileset2.0_11: -7772209280020302599
+      upwards tileset2.0_12: -1192059251790957305
+      upwards tileset2.0_13: -8756598190618126359
+      upwards tileset2.0_14: 2489953925255755981
+      upwards tileset2.0_15: -1351662514936609349
+      upwards tileset2.0_16: 1413924920704881776
+      upwards tileset2.0_17: 4323586660291713097
+      upwards tileset2.0_18: 2569245095735112048
+      upwards tileset2.0_19: 6319945850538468227
+      upwards tileset2.0_2: -3131893438742929360
+      upwards tileset2.0_20: -4486534218872664567
+      upwards tileset2.0_21: -4960894930939414477
+      upwards tileset2.0_22: 293135314789381624
+      upwards tileset2.0_23: 8345202945347780180
+      upwards tileset2.0_24: -7345311199931676329
+      upwards tileset2.0_25: 6142059163276996630
+      upwards tileset2.0_26: 5928431993919291718
+      upwards tileset2.0_27: 1440745722973675951
+      upwards tileset2.0_28: -812306964266586484
+      upwards tileset2.0_29: 3368032194503047371
+      upwards tileset2.0_3: -6332972158945265614
+      upwards tileset2.0_30: 5421291089079881018
+      upwards tileset2.0_31: -1598193697683464698
+      upwards tileset2.0_32: -1948691844436217951
+      upwards tileset2.0_33: -1000019465142043250
+      upwards tileset2.0_34: -7134518060418790311
+      upwards tileset2.0_35: 2776304981777122028
+      upwards tileset2.0_36: 2538327975192682493
+      upwards tileset2.0_37: -1436065602053827489
+      upwards tileset2.0_38: -359800996807191237
+      upwards tileset2.0_39: -1982449162241834249
+      upwards tileset2.0_4: -8129635693659134371
+      upwards tileset2.0_40: -9140551024264964445
+      upwards tileset2.0_41: 894749249016226803
+      upwards tileset2.0_42: 3541310997503004746
+      upwards tileset2.0_43: -3968403544282891770
+      upwards tileset2.0_44: 2865436364746891693
+      upwards tileset2.0_45: -238321936978201831
+      upwards tileset2.0_46: 8519299145273015823
+      upwards tileset2.0_47: 5430212019957805880
+      upwards tileset2.0_48: 2106532109410919423
+      upwards tileset2.0_49: 5182959526482824420
+      upwards tileset2.0_5: 2221769859784754204
+      upwards tileset2.0_50: -4240246040349658360
+      upwards tileset2.0_51: 1254549720315261185
+      upwards tileset2.0_6: -644748995134631705
+      upwards tileset2.0_7: 6141605032964347767
+      upwards tileset2.0_8: 5751075466502813912
+      upwards tileset2.0_9: 5465630521934712957
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

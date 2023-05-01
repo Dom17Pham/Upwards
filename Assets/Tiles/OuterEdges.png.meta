@@ -120,6 +120,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -174,6 +175,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -869,6 +882,39 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      OuterEdges_0: -4048316488461993892
+      OuterEdges_1: -1619758387198800960
+      OuterEdges_10: -427261420059044322
+      OuterEdges_11: 5550645887283079197
+      OuterEdges_12: -4937373024127665640
+      OuterEdges_13: -4443083822246830623
+      OuterEdges_14: -4370079499941144441
+      OuterEdges_15: 7355649151842744814
+      OuterEdges_16: 1422071535939804770
+      OuterEdges_17: -9100317382016744954
+      OuterEdges_18: 7447568845935775582
+      OuterEdges_19: -2161553336917262780
+      OuterEdges_2: -6082902623582558006
+      OuterEdges_20: -4181978410314312291
+      OuterEdges_21: -3275202535301977261
+      OuterEdges_22: 4411713149183576445
+      OuterEdges_23: 3897789191319945778
+      OuterEdges_24: -8651481301203343289
+      OuterEdges_25: -8390548063063121288
+      OuterEdges_26: 3078471486970120728
+      OuterEdges_27: -6311041777040571860
+      OuterEdges_28: -7195340091661014911
+      OuterEdges_29: -3674303781431672849
+      OuterEdges_3: -8532088505910302392
+      OuterEdges_30: -91420978357129472
+      OuterEdges_31: -3600541129069639608
+      OuterEdges_4: 1157965064576171841
+      OuterEdges_5: -5560903641403494850
+      OuterEdges_6: 2373591180324308712
+      OuterEdges_7: 8781318487069834877
+      OuterEdges_8: 1724599260901473038
+      OuterEdges_9: -8463345593408977943
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
