@@ -1,20 +1,19 @@
 ![Upwards banner](https://user-images.githubusercontent.com/71042283/213835742-f78b725b-fb21-462b-8786-07de33151c1e.png)
 
-## Upwards - 2D Platformer Game
-A platformer game developed with Unity
+## Upwards
+A 2D pixel art platformer game that takes place in an underground prison. The player takes on the role of a two-legged character who is desperate to escape this dark and treacherous place. The game features various levels that are full of dangerous traps and obstacles, and the player must use their platforming skills and quick reflexes to navigate through each level and reach the exit.
 
 ## Table of contents 
-* [General info](#general-info)
+* [Project Description](#project-description)
 * [Game status](#game-status)
 * [Game screenshots](#game-screenshots)
 
-## General info 
-This project is created using Unity and written in C#. 
-Game art is created using Aseprite. 
+## Project Description
+This project is developed using Unity and the game art is created using Aseprite. 
 
-The game involves the player to play as a two-legged character to
-jump onto platforms upwards to the game objective. 
-While the player proceeds upwards, the player must also avoid obstacles and enemies. 
+As the player progresses through the levels, they will encounter various enemies and obstacles, including patrolling guards, saws, and deadly spikes. The player must use their wits and agility to avoid these hazards. 
+
+The ultimate goal of Upwards is to escape the prison and reach the surface world, but the journey is full of challenges and surprises that keep the player engaged and entertained throughout.
 
 ## Game status 
 Under development :]
