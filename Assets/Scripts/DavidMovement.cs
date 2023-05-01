@@ -13,13 +13,14 @@ public class DavidMovement : MonoBehaviour
 
     MovementState state;
 
-    [SerializeField] private LayerMask JumpableGround;
-
     private float XDirect = 0f;
+
+    // Movement properties
+    private enum MovementState { idle, running, jumping, falling}
+    [SerializeField] private LayerMask JumpableGround;
+    [SerializeField] private LayerMask JumpableWall;
     [SerializeField] private float MoveSpeed = 5f;
     [SerializeField] private float JumpForce = 12f;
-
-    private enum MovementState { idle, running, jumping, falling}
 
     [SerializeField] private PhysicsMaterial2D FullFriction;
     [SerializeField] private PhysicsMaterial2D NormalFriction;
@@ -38,14 +39,13 @@ public class DavidMovement : MonoBehaviour
 
         rb.velocity = new Vector2(XDirect * MoveSpeed, rb.velocity.y);
 
-        // if the Jump button is pressed, player jumps
+        // if the Jump button(Spacebar) is pressed, player jumps
         if (Input.GetButtonDown("Jump") && GroundCheck())
         {
            rb.velocity = new Vector2(rb.velocity.x, JumpForce);
-        }
+        }   
 
         UpdateAnimationState();
-
     }
 
     private void UpdateAnimationState()
