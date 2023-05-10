@@ -1,16 +1,7 @@
 fileFormatVersion: 2
-guid: 6d19e3f769e500c41906303e777e07f8
+guid: 5992c41b88543e1498b10ada71aafc7f
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -2610570016342765908
-    second: CB demon_0
-  - first:
-      213: 2871335203565449902
-    second: CB demon_1
-  - first:
-      213: 5169065972081422731
-    second: CB demon_2
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -72,14 +63,14 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
-  cookieLightType: 1
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -114,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CB demon_0
+      name: crossbowGuard_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cae8a9ac66465cbd0800000000000000
-      internalID: -2610570016342765908
+      spriteID: 1c0b6f151476d4a4dba7b17c16e62431
+      internalID: -1133483700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CB demon_1
+      name: crossbowGuard_1
       rect:
         serializedVersion: 2
         x: 16
@@ -149,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea2b797972809d720800000000000000
-      internalID: 2871335203565449902
+      spriteID: 16ba0e32a78865b4ba06e6e3dc5743b0
+      internalID: 1708493261
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CB demon_2
+      name: crossbowGuard_2
       rect:
         serializedVersion: 2
         x: 32
@@ -170,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b81f87e5d163cb740800000000000000
-      internalID: 5169065972081422731
+      spriteID: 27dc44a35f49ecb42b3044cbb8b2c966
+      internalID: -986424058
       vertices: []
       indices: 
       edges: []
@@ -187,9 +178,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      CB demon_0: -2610570016342765908
-      CB demon_1: 2871335203565449902
-      CB demon_2: 5169065972081422731
+      crossbowGuard_0: -1133483700
+      crossbowGuard_1: 1708493261
+      crossbowGuard_2: -986424058
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
