@@ -95,7 +95,7 @@ public class DavidMovement : MonoBehaviour
         if(collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Trap" || collision.gameObject.tag == "ParentProjectile")
         {
             anime.SetTrigger("death");
-            rb.bodyType = RigidbodyType2D.Static;
+            rb.simulated = false;
         }
     }
 
