@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1556096995}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LeftGroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1933444815}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RightGroundCheck (1)
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1034930022399378600}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CastPoint
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 1034930022783697402}
   - component: {fileID: 1034930022783697407}
   - component: {fileID: 1034930022783697400}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Guard
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a29797c086d9e042afb04d444a10e88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 2472696091805629948, guid: dc22e56f6259cc547bc9f4441faba4d8, type: 3}
   castPoint: {fileID: 1034930022399378600}
   moveSpeed: 1
   detectionRange: 3
