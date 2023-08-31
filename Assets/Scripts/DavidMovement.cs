@@ -25,12 +25,21 @@ public class DavidMovement : MonoBehaviour
     [SerializeField] private PhysicsMaterial2D FullFriction;
     [SerializeField] private PhysicsMaterial2D NormalFriction;
 
+    private bool isTransparent = false;
+    private Color originalColor;
+    private float transparencyDuration = 10f;  
+    private float cooldownDuration = 30f;      
+    private float transparencyTimer = 0f;
+    private float cooldownTimer = 0f;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<BoxCollider2D>();
         anime = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
+        
+        originalColor = sprite.color;
     }
 
     void Update()
@@ -44,6 +53,48 @@ public class DavidMovement : MonoBehaviour
         {
            rb.velocity = new Vector2(rb.velocity.x, JumpForce);
         }   
+
+        // Check for Ctrl key press to toggle transparency
+        if (Input.GetKeyDown(KeyCode.LeftControl) && cooldownTimer <= 0f)
+        {
+            isTransparent = !isTransparent;
+            UpdateTransparency();
+
+            // Start the transparency timer if becoming transparent
+            if (isTransparent)
+            {
+                transparencyTimer = transparencyDuration;
+                cooldownTimer = cooldownDuration;  // Start the cooldown timer
+            }
+        }
+
+        // Decrement the timers
+        if (transparencyTimer > 0f)
+        {
+            transparencyTimer -= Time.deltaTime;
+        }
+        if (cooldownTimer > 0f)
+        {
+            cooldownTimer -= Time.deltaTime;
+        }
+
+        // Check if the transparency timer has expired
+        if (transparencyTimer <= 0f)
+        {
+            isTransparent = false;
+            UpdateTransparency();
+        }
+
+        // Change the player's tag to "Invisible" when becoming transparent
+        if (isTransparent)
+        {
+            gameObject.tag = "Invisible";
+        }
+        // Change the player's tag back to "Player" when not transparent
+        else
+        {
+            gameObject.tag = "Player";
+        }
 
         UpdateAnimationState();
     }
@@ -96,6 +147,20 @@ public class DavidMovement : MonoBehaviour
         {
             anime.SetTrigger("death");
             rb.simulated = false;
+        }
+    }
+
+    private void UpdateTransparency()
+    {
+        if (isTransparent)
+        {
+            Color transparentColor = originalColor;
+            transparentColor.a = 0.25f; // Adjust this value for the desired transparency level
+            sprite.color = transparentColor;
+        }
+        else
+        {
+            sprite.color = originalColor;
         }
     }
 

@@ -9,6 +9,7 @@ TagManager:
   - Projectile
   - ParentProjectile
   - Ground
+  - Invisible
   layers:
   - Default
   - TransparentFX
