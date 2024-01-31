@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2472696091805629923}
   - component: {fileID: 2472696091805629920}
   - component: {fileID: 2472696091805629921}
+  - component: {fileID: 9180084167385409136}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -110,6 +111,8 @@ MonoBehaviour:
   JumpForce: 12
   FullFriction: {fileID: 0}
   NormalFriction: {fileID: 0}
+  transparencyTimer: 0
+  cooldownTimer: 0
 --- !u!95 &2472696091805629923
 Animator:
   serializedVersion: 5
@@ -178,3 +181,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.34089607, y: 0.83103675}
   m_EdgeRadius: 0
+--- !u!114 &9180084167385409136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2472696091805629950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8092e2c1963021d4790523e870958cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InvisibilityTimeText: {fileID: 0}
+  cooldownTimeText: {fileID: 0}

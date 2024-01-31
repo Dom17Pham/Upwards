@@ -29,8 +29,9 @@ public class DavidMovement : MonoBehaviour
     private Color originalColor;
     private float transparencyDuration = 10f;  
     private float cooldownDuration = 30f;      
-    private float transparencyTimer = 0f;
-    private float cooldownTimer = 0f;
+    public float transparencyTimer = 0f;
+    public float cooldownTimer = 0f;
+    private bool isTransparencyTimerExpired = false;
 
     void Start()
     {
@@ -59,30 +60,39 @@ public class DavidMovement : MonoBehaviour
         {
             isTransparent = !isTransparent;
             UpdateTransparency();
-
             // Start the transparency timer if becoming transparent
             if (isTransparent)
             {
                 transparencyTimer = transparencyDuration;
-                cooldownTimer = cooldownDuration;  // Start the cooldown timer
+            }
+            else
+            {
+                transparencyTimer = 0f;
             }
         }
-
+        
         // Decrement the timers
-        if (transparencyTimer > 0f)
+        if (transparencyTimer > 0f && isTransparent)
         {
             transparencyTimer -= Time.deltaTime;
         }
-        if (cooldownTimer > 0f)
+        if(cooldownTimer > 0f)
         {
             cooldownTimer -= Time.deltaTime;
         }
 
         // Check if the transparency timer has expired
-        if (transparencyTimer <= 0f)
+        if (transparencyTimer <= 0f && isTransparent && !isTransparencyTimerExpired)
         {
+            isTransparencyTimerExpired = true;
             isTransparent = false;
             UpdateTransparency();
+        }
+
+        if(isTransparencyTimerExpired)
+        {
+            isTransparencyTimerExpired = false;
+            cooldownTimer = cooldownDuration;
         }
 
         // Change the player's tag to "Invisible" when becoming transparent
@@ -155,7 +165,7 @@ public class DavidMovement : MonoBehaviour
         if (isTransparent)
         {
             Color transparentColor = originalColor;
-            transparentColor.a = 0.25f; // Adjust this value for the desired transparency level
+            transparentColor.a = 0.25f; // Adjust this value for transparency level
             sprite.color = transparentColor;
         }
         else
