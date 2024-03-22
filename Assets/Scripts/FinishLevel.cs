@@ -6,14 +6,18 @@ using UnityEngine.SceneManagement;
 public class FinishLevel : MonoBehaviour
 {
 
-    private bool levelCompleted = false;
+    private bool levelCompleted;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
         if(collision.gameObject.name == "Player"){
             levelCompleted = true;
-            Invoke("CompleteLevel", 3f);
+            Invoke("CompleteLevel", 1f);
+        }
+        else
+        {
+            levelCompleted = false;
         }
     }
 

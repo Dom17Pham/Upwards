@@ -10,6 +10,8 @@ public class DavidMovement : MonoBehaviour
     private BoxCollider2D coll;
     private SpriteRenderer sprite;
     private Animator anime;
+    private Camera mainCamera;
+    private Camera bossCamera;
 
     MovementState state;
 
@@ -39,7 +41,7 @@ public class DavidMovement : MonoBehaviour
         coll = GetComponent<BoxCollider2D>();
         anime = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
-        
+        mainCamera = Camera.main;
         originalColor = sprite.color;
     }
 
@@ -55,56 +57,56 @@ public class DavidMovement : MonoBehaviour
            rb.velocity = new Vector2(rb.velocity.x, JumpForce);
         }   
 
-        // Check for Ctrl key press to toggle transparency
-        if (Input.GetKeyDown(KeyCode.LeftControl) && cooldownTimer <= 0f)
-        {
-            isTransparent = !isTransparent;
-            UpdateTransparency();
-            // Start the transparency timer if becoming transparent
-            if (isTransparent)
-            {
-                transparencyTimer = transparencyDuration;
-            }
-            else
-            {
-                transparencyTimer = 0f;
-            }
-        }
+        //// Check for Ctrl key press to toggle transparency
+        //if (Input.GetKeyDown(KeyCode.LeftControl) && cooldownTimer <= 0f)
+        //{
+        //    isTransparent = !isTransparent;
+        //    UpdateTransparency();
+        //    // Start the transparency timer if becoming transparent
+        //    if (isTransparent)
+        //    {
+        //        transparencyTimer = transparencyDuration;
+        //    }
+        //    else
+        //    {
+        //        transparencyTimer = 0f;
+        //    }
+        //}
         
-        // Decrement the timers
-        if (transparencyTimer > 0f && isTransparent)
-        {
-            transparencyTimer -= Time.deltaTime;
-        }
-        if(cooldownTimer > 0f)
-        {
-            cooldownTimer -= Time.deltaTime;
-        }
+        //// Decrement the timers
+        //if (transparencyTimer > 0f && isTransparent)
+        //{
+        //    transparencyTimer -= Time.deltaTime;
+        //}
+        //if(cooldownTimer > 0f)
+        //{
+        //    cooldownTimer -= Time.deltaTime;
+        //}
 
-        // Check if the transparency timer has expired
-        if (transparencyTimer <= 0f && isTransparent && !isTransparencyTimerExpired)
-        {
-            isTransparencyTimerExpired = true;
-            isTransparent = false;
-            UpdateTransparency();
-        }
+        //// Check if the transparency timer has expired
+        //if (transparencyTimer <= 0f && isTransparent && !isTransparencyTimerExpired)
+        //{
+        //    isTransparencyTimerExpired = true;
+        //    isTransparent = false;
+        //    UpdateTransparency();
+        //}
 
-        if(isTransparencyTimerExpired)
-        {
-            isTransparencyTimerExpired = false;
-            cooldownTimer = cooldownDuration;
-        }
+        //if(isTransparencyTimerExpired)
+        //{
+        //    isTransparencyTimerExpired = false;
+        //    cooldownTimer = cooldownDuration;
+        //}
 
-        // Change the player's tag to "Invisible" when becoming transparent
-        if (isTransparent)
-        {
-            gameObject.tag = "Invisible";
-        }
-        // Change the player's tag back to "Player" when not transparent
-        else
-        {
-            gameObject.tag = "Player";
-        }
+        //// Change the player's tag to "Invisible" when becoming transparent
+        //if (isTransparent)
+        //{
+        //    gameObject.tag = "Invisible";
+        //}
+        //// Change the player's tag back to "Player" when not transparent
+        //else
+        //{
+        //    gameObject.tag = "Player";
+        //}
 
         UpdateAnimationState();
     }

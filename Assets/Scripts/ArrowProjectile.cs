@@ -19,10 +19,17 @@ public class ArrowProjectile : MonoBehaviour
         // For each child of each arrow projectile, change tag to projectile 
         // to differentiate it from its parent object and set child game object
         // to the same position as the parent.
-        foreach(GameObject Parent in Parents){
-            Child = Parent.transform.GetChild(0).gameObject;
-            Child.gameObject.tag = "Projectile";
-            Child.transform.localPosition = new Vector3(0f, 0f, 0f);
+        foreach (GameObject Parent in Parents)
+        {
+            if (Parent.transform.childCount > 0)
+            {
+                Child = Parent.transform.GetChild(0).gameObject;
+                if (Child != null)
+                {
+                    Child.gameObject.tag = "Projectile";
+                    Child.transform.localPosition = new Vector3(0f, 0f, 0f);
+                }
+            }
         }
     }
     void Update()
